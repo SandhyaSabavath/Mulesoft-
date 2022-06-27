@@ -6,7 +6,7 @@ public class InsertRecordIntoDb {
     public static void main(String[] args) {
         try {
              Connection con = null;
-            Statement stmt = null;
+             Statement stmt = null;
 
             con = DriverManager
                     .getConnection("jdbc:sqlite:/C:\\sqlite\\java\\connect\\net\\sqlitetutorial\\Mulesoft\\MoviesDatabase.db");
@@ -29,7 +29,7 @@ public class InsertRecordIntoDb {
             String query4 = "INSERT INTO MyMovies values ('don','sivakarthikeya','priyanka',2022,'C.B chakravarthi');";
             stmt.executeUpdate(query4); // Create Query-4
 
-           String query5 = "INSERT INTO MyMovies values ('karnan','dhanush','rajishavijayan',2019,'mariselvaraj');";
+            String query5 = "INSERT INTO MyMovies values ('karnan','dhanush','rajishavijayan',2019,'mariselvaraj');";
             stmt.executeUpdate(query5);
             stmt.close();
             con.close();                //Close Connection
